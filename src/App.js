@@ -13,7 +13,7 @@ function Menu (props){
       { props.entries.map(e => <li><a href="#">{e}</a></li>) }
     </ul>);
   }
-/*
+
   function Comment(props) {
     return (
       <div className="Comment">
@@ -30,12 +30,21 @@ function Menu (props){
           {props.text}
         </div>
         <div className="Comment-date">
-          {formatDate(props.date)}
+          {props.date.toLocaleTimeString()}
         </div>
       </div>
     );
   }
-*/
+
+const comment = {
+  date: new Date(),
+  text: "Hey ho, let's go!",
+  author: {
+    name: 'Joey Ramone',
+    avatarUrl: 'http://placekitten.com/g/64/64'
+  }
+};
+
 class App extends Component {
   render() {
     return (
@@ -47,6 +56,13 @@ class App extends Component {
         <p className="App-intro">
           A little app with React
         </p>
+        <div className="App-body">
+          <Comment
+            date={comment.date}
+            text={comment.text}
+            author={comment.author}>
+          </Comment>
+        </div>
       </div>
     );
   }
