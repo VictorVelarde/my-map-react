@@ -46,13 +46,13 @@
 
 .Menu a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     display: block;
     transition: .3s background-color;
 }
 
 .Menu a:hover {
-    background-color: #005f5f;
+    border-bottom: 2px black solid;
 }
 
 .Menu a.active {
@@ -68,6 +68,9 @@
         height: 50px;
         line-height: 50px;
         font-size: 1.4em;
+    }
+    .Menu a {
+        text-decoration: none;
     }
     /* Option 1 - Display Inline */
     .Menu li {
