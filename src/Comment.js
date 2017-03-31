@@ -6,10 +6,7 @@ class Menu extends Component {
         return (
             <div className="Comment">
                 <div className="UserInfo">
-                    <Avatar user={{
-                        avatarUrl: this.props.author.avatarUrl,
-                        name: this.props.author.name
-                    }}/>
+                    <Avatar user={this.props.author}/>
                     <div className="UserInfo-name">
                         {this.props.author.name}
                     </div>
