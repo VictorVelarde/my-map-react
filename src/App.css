@@ -28,7 +28,7 @@
 }
 
 .Menu ul {
-    list-style: none;
+    list-style-type: none;
     background-color: black;
     /*#444;*/
     text-align: center;

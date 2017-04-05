@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import Comment from './Comment';
 import Menu from './Menu';
+import Clock from './Clock';
 
 import './App.css';
 
@@ -40,6 +41,7 @@ class App extends Component {
                 <div className="App-body">
                     <Comment date={comment.date} text={comment.text} author={comment.author}/>
                 </div>
+                <Clock/>
             </div>
         );
     }
