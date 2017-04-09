@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import Comment from './Comment';
 import Menu from './Menu';
 import Clock from './Clock';
-
+import ToggleButton from './ToggleButton';
 import './App.css';
 
 const comment = {
@@ -30,9 +30,6 @@ class App extends Component {
                     }, {
                         id: 2,
                         text: "Map"
-                    }, {
-                        id: 3,
-                        text: "About"
                     }
                 ]}/>
                 <p className="App-intro">
@@ -42,6 +39,7 @@ class App extends Component {
                     <Comment date={comment.date} text={comment.text} author={comment.author}/>
                 </div>
                 <Clock/>
+                <ToggleButton/>
             </div>
         );
     }
