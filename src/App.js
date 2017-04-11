@@ -4,6 +4,7 @@ import Comment from './Comment';
 import Menu from './Menu';
 import Clock from './Clock';
 import ToggleButton from './ToggleButton';
+import LoginControl from './Login/LoginControl';
 import './App.css';
 
 const comment = {
@@ -23,6 +24,8 @@ class App extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <h1>my-map-react</h1>
                 </div>
+
+                <LoginControl/>
                 <Menu entries={[
                     {
                         id: 1,
@@ -40,8 +43,10 @@ class App extends Component {
                 </div>
                 <Clock/>
                 <ToggleButton/>
+                <hr></hr>
+
             </div>
-        );
+        )
     }
 }
 
