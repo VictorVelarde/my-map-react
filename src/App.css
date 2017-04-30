@@ -1,83 +1,83 @@
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    animation: App-logo-spin infinite 10s linear;
-    height: 80px;
+  animation: App-logo-spin infinite 10s linear;
+  height: 80px;
 }
 
 .App-header {
-    background-color: #222;
-    height: 150px;
-    padding: 20px;
-    color: white;
+  background-color: #222;
+  height: 180px;
+  padding: 20px;
+  color: white;
 }
 
 .App-intro {
-    font-size: large;
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .Menu ul {
-    list-style-type: none;
-    background-color: black;
-    /*#444;*/
-    text-align: center;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  background-color: black;
+  /*#444;*/
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .Menu li {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-    border-bottom: 1px solid #888;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
 }
 
 .Menu a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    transition: .3s background-color;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: .3s background-color;
 }
 
 .Menu a:hover {
-    border-bottom: 2px black solid;
+  border-bottom: 2px black solid;
 }
 
 .Menu a.active {
-    background-color: #fff;
-    color: #444;
-    cursor: default;
+  background-color: #fff;
+  color: #444;
+  cursor: default;
 }
 
 @media screen and (min-width: 600px) {
-    .Menu li {
-        width: 120px;
-        border-bottom: none;
-        height: 50px;
-        line-height: 50px;
-        font-size: 1.4em;
-    }
-    .Menu a {
-        text-decoration: none;
-    }
-    /* Option 1 - Display Inline */
-    .Menu li {
-        display: inline-block;
-        margin-right: -4px;
-    }
-    /* Options 2 - Float
+  .Menu li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  .Menu a {
+    text-decoration: none;
+  }
+  /* Option 1 - Display Inline */
+  .Menu li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+  /* Options 2 - Float
   .Menu li {
     float: left;
   }

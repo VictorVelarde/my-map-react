@@ -1,7 +1,8 @@
 .Clock h1 {
-    font-color: #444;
+  font-color: #444;
 }
 
 .Clock h2 {
-    border: 1px #666 solid;
+  color: #111;
+  font-size: 14px;
 }
